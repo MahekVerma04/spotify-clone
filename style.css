@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family:'Roboto','Nunito';
+    position: fixed;
+    transition: 0.5s;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+nav.brand{
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:70px;
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+
+}
+
+nav ul li{
+    padding: 0 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.brand img{
+    display: flex;
+    padding: 6px;
+   
+}
+
+nav.sticky{
+    background-color:black ;
+    color: white;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    
+    min-height: 50vh ;
+    margin: 100px auto;
+    width: 70%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('pexels-daniel-reche-718241-3721941.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#myProgressBar{
+    
+    width: 80vw;
+    text-align: center;
+}
+
+.bottom{
+    position: sticky;
+    background-color: black;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 12px;
+}
+
+.icons i{
+
+    cursor: pointer;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color:black;
+    width: 35%;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px;
+    
+}
+
+.songItem img{
+    margin: 5px 13px;
+    width: 30px;
+    
+    border-radius: 15px;
+    
+}
+
+.timestamp{
+    margin: 0 22px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+    justify-content:space-between;
+    
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
